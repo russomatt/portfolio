@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "type": "interactive",
+        "project": {
+            "title" : "Death Rate",
+            "subTitle" : "Interactive Visualization",
+            "role" : "Design/Development",
+            "description" : "Lorem ipsum dolor sit amet, |https://google.com*consectetur cool lol omg| adipiscing elit. Maecenas rhoncus ligula non ex feugiat auctor.~Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vitae libero lorem. Vivamus lobortis lectus non scelerisque congue. Etiam porta hendrerit elit, eu hendrerit nisl ornare a. Vivamus pharetra dignissim enim ullamcorper congue. Ut sed lacus libero.",
+            "img" : [ "../img/placeholder1.png",
+                "../img/placeholder2.png",
+                "../img/placeholder3.png",
+                "../img/placeholder4.png",
+                "../img/placeholder5.png"]
+        }
+    },
+    {
+        "id": 2,
+        "type": "interactive",
+        "project": {
+            "title" : "Bar",
+            "subTitle" : "Profitability Tool",
+            "role" : "Design/Development",
+            "description" : "description 1",
+            "img" : [ "../img/placeholder1.png",
+                "../img/placeholder2.png",
+                "../img/placeholder3.png",
+                "../img/placeholder4.png",
+                "../img/placeholder5.png"]
+
+        }
+    },
+    {
+        "id": 3,
+        "type": "interactive",
+        "project": {
+            "title" : "Virtual",
+            "subTitle" : "Hamburger Exhibition",
+            "role" : "Design/Development",
+            "description" : "description 1",
+            "img" : [ "../img/placeholder1.png",
+                "../img/placeholder2.png",
+                "../img/placeholder3.png",
+                "../img/placeholder4.png",
+                "../img/placeholder5.png"]
+        }
+    },
+    {
+        "id": 4,
+        "type": "interactive",
+        "project": { 
+            "title" : "Wave: An Intuitive",
+            "subTitle": "Communication App",
+            "role" : "Design/Development",
+            "description" : "description 1",
+            "img" : [ "../img/placeholder1.png",
+                "../img/placeholder2.png",
+                "../img/placeholder3.png",
+                "../img/placeholder4.png",
+                "../img/placeholder5.png"]
+        }
+    },
+    {
+        "id": 5,
+        "type": "other",
+        "project": { 
+            "title" : "Greek Ecconomic Crisis",
+            "subTitle" : "Interactive Timeline",
+            "role" : "Design/Development",
+            "description" : "description 1",
+            "img" : [ "../img/placeholder1.png",
+                "../img/placeholder2.png",
+                "../img/placeholder3.png",
+                "../img/placeholder4.png",
+                "../img/placeholder5.png"]
+        }
+    },
+    {
+        "id": 6,
+        "type": "print",
+        "project": { 
+            "title" : "Placeholder Project",
+            "subTitle" : "Placeholder Project",
+            "role" : "stuff 1",
+            "description" : "description 1",
+            "img" : [ "../img/placeholder1.png",
+                "../img/placeholder2.png",
+                "../img/placeholder3.png",
+                "../img/placeholder4.png",
+                "../img/placeholder5.png"]
+        }
+    },
+    {
+        "id": 7,
+        "type": "print",
+        "project": { 
+            "title" : "Placeholder Project",
+            "title" : "Placeholder Project",
+            "role" : "stuff 1",
+            "description" : "description 1",
+            "img" : [ "../img/placeholder1.png",
+                "../img/placeholder2.png",
+                "../img/placeholder3.png",
+                "../img/placeholder4.png",
+                "../img/placeholder5.png"]
+        }
+    },
+    {
+        "id": 8,
+        "type": "print",
+        "project": { 
+            "title" : "Placeholder Project",
+            "subTitle" : "Placeholder Project",
+            "role" : "stuff 1",
+            "description" : "description 1",
+            "img" : [ "../img/placeholder1.png",
+                "../img/placeholder2.png",
+                "../img/placeholder3.png",
+                "../img/placeholder4.png",
+                "../img/placeholder5.png"]
+        }
+    }
+]
