@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 const loaders = {
     fileLoader: {
-        test: /\.(eot|svg|ttf|woff|woff2|jpg|png)$/,
+        test: /\.(eot|svg|ttf|woff|woff2|gif|jpg|png)$/,
         loader: 'file?name=[path][name].[hash].[ext]',
     },
     jsxLoader: {
@@ -40,7 +40,19 @@ const app = {
             loaders.scssLoader,
             loaders.cssLoader
         ]
-    }
+    },
+    plugins:[
+      new webpack.DefinePlugin({
+        'process.env':{
+          'NODE_ENV': JSON.stringify('production')
+        }
+      }),
+      new webpack.optimize.UglifyJsPlugin({
+        compress:{
+          warnings: true
+        }
+      })
+    ]
 };
 module.exports = [
     app

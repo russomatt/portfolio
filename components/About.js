@@ -9,9 +9,9 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
                 <ReactCSSTransitionGroup 
                     transitionName="fade-transition" 
                     transitionAppear={true} 
-                    transitionAppearTimeout={600}
-                    transitionEnterTimeout={600}
-                    transitionLeaveTimeout={600}>
+                    transitionAppearTimeout={350}
+                    transitionEnterTimeout={350}
+                    transitionLeaveTimeout={50}>
                     <div key='about-content' className="about-container">
                         <span onClick={ this.props.closeButton } className="icon icon-cross"/>
                         <div className="col-xs-12 col-sm-11">

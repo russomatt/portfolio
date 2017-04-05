@@ -22,7 +22,6 @@ export default React.createClass({
         })
     },
     showWork: function() {
-        console.log('lol');
         var that = this;
 
         that.setState({
@@ -46,11 +45,11 @@ export default React.createClass({
         var that = this;
         var showView = function () {
             if( that.state.pageShown == 'home') {
-                return <Home isProjectShown={ that.state.showProject } toggleProject={ that.toggleProject } />;
+                return <Home isProjectShown={ that.state.showProject } toggleProject={ that.toggleProject } clickWork={ that.showWork }/>;
             } else if( that.state.pageShown == 'work') {
                 return <Work isProjectShown={ that.state.showProject } toggleProject={ that.toggleProject } />;
             } else {
-                return <Home isProjectShown={ that.state.showProject } toggleProject={ that.toggleProject } />;
+                return <Home isProjectShown={ that.state.showProject } toggleProject={ that.toggleProject } clickWork={ that.showWork }/>;
             }
         };
         var page = showView();
@@ -61,7 +60,7 @@ export default React.createClass({
         <Nav clickHome={ this.showHome }
             clickWork={ this.showWork }
             clickAbout={ this.toggleAbout }
-            isProjectShown={ this.state.showProject }
+            pageShown={ this.state.pageShown }
             />
         { view }
                 <ReactCSSTransitionGroup 

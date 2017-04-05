@@ -17,14 +17,14 @@ body {
     font-family: $type-family-main;
     padding: 2em;
     @media (max-width: $mobile-size) {
-        padding: 1em;
+        padding: 0;
     }
 }
 nav.nav {
     position: fixed;
     left: 0em;
     top: 0em;
-    z-index: 101;
+    z-index: 99;
     width: 100%;
     padding: 1.25em 2em 1.5em;
     background: rgba(255,255,255,0.9);
@@ -40,6 +40,9 @@ nav.nav {
         &:hover {
             color: $accent-color;
         }
+    }
+    .nav-active span{
+        color: $accent-color;
     }
     @media (max-width: $mobile-size) {
         padding: 1em 1em;
@@ -199,6 +202,23 @@ nav.nav {
         }
     }
 }
+.work-button {
+    text-align: right;
+    font-size: 3em;
+
+    h3 {
+        color: #4d4d4d;
+        display: inline-block;
+        white-space: nowrap;
+        cursor: pointer;
+        &:hover {
+            color: $accent-color;
+        }
+    }
+    @media (max-width: $mobile-size) {
+        font-size: 2em;
+    }
+}
 .work-view {
     padding: 4em 0;
 
@@ -220,6 +240,9 @@ nav.nav {
         }
     }
     @media (max-width: $mobile-size) {
+        .print-filter {
+            text-align: center;
+        }
     }
 }
 nav.nav.project-nav {
@@ -241,8 +264,23 @@ nav.nav.project-nav {
     cursor: default;
     overflow: scroll;
 
+    .close-button {
+        color: #fff;
+        background: rgba(0,0,0,0.85);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        padding: 1em;
+        z-index: 3;
+        cursor: pointer;
+        &:hover {
+            background-color: $accent-color;
+        }
+    }
     #project-header {
-        height: 37em;
+        height: 32em;
         padding: 4em 0;
         background-color: #1289FB;
         position: relative;
@@ -299,6 +337,19 @@ nav.nav.project-nav {
         img {
             transform: scale(1);
             filter: grayscale(0);
+            margin-bottom: 3em;
+        }
+    }
+    .project-video {
+        iframe {
+            display: block;
+            width: 560px;
+            height: 310px;
+            margin-bottom: 5em;
+            @media (max-width: $mobile-size) {
+                width: 300px;
+                height: 240px;
+            }
         }
     }
     .content-container {
@@ -340,7 +391,13 @@ nav.nav.project-nav {
                     font-size: 1.5em;
                 }
             }
+            .back-button h2 {
+                bottom: 5em;
+            }
         }
+    }
+    .content-container {
+        padding: 2em 0;
     }
 }
 #about-view {
@@ -526,15 +583,17 @@ nav.nav.project-nav {
 
 .fade-transition-appear.fade-transition-appear-active {
     opacity: 1;
-    transition: all .6s ease;
+    transition: all 0.35s ease;
+    transition-delay: 0.1s;
 }
 .fade-transition-enter.fade-transition-enter-active {
     opacity: 1;
-    transition: all .6s ease;
+    transition: all 0.35s ease;
+    transition-delay: 0.1s;
 }
 .fade-transition-leave.fade-transition-leave-active {
     opacity: 0;
-    transition: all .6s ease;
+    transition: all 0.05s ease;
 }
 
 

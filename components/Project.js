@@ -16,15 +16,27 @@ import React from 'react';
     render: function() {
         var that = this;
         var i = 0;
-        var imgNodes = this.props.data.project.img.map( function(img){
+        var el = document.getElementById('body');
+        var imgNodes = this.props.data.project.img != undefined ?
+        this.props.data.project.img.map( function(img){
             if(that.props.data) {
                 i = i + 1;
                 return (
                     <div key={"img"+that.props.data.id+"-"+i} className="col-xs-12 col-sm-10 col-sm-offset-1 project-image">
                         <img src={ img }/>
                     </div> );
+            } 
+        }) : "";
+        var vidNodes = this.props.data.project.vid != undefined ?
+        this.props.data.project.vid.map( function(vid){
+            if(that.props.data) {
+                i = i + 1;
+                return (
+                    <div key={"vid"+that.props.data.id+"-"+i} className="col-xs-12 col-sm-10 col-sm-offset-1 project-video">
+                        <iframe src={ vid } frameborder="0" allowfullscreen></iframe>
+                    </div> );
             }
-        });
+        }) : "";
          var parseDescription = function() {
             if( that.props ) {
                 var arr = that.props.data.project.description.split('|');
@@ -51,14 +63,26 @@ import React from 'react';
         }
         var descArr = parseDescription();
         var description = descArr;
+        el.style.overflow = "hidden";
+        var headerStyles = "url('" + this.props.data.project.bg + "')";
+        var styles = {
+            bg: {
+                background: headerStyles,
+                backgroundSize: 'cover',
+            },
+        }
         return (
             <div id="project-view">
-                <div id="project-header" className={ 'project-bg-' + this.props.data.id }>
+                <div className="close-button"
+                    onClick={ this.props.closeProject }>
+                        <span className="icon icon-cross"></span>
+                </div>
+                <div id="project-header" style={ styles.bg }>
                     <div className="container">
                         <div className="back-button" onClick={ this.props.closeProject }>
                             <h2>
                                 <span className="icon icon-arrow-left2"></span>
-                                All&nbsp;Work
+                                Close&nbsp;Project
                             </h2>
 
                         </div>
@@ -77,6 +101,7 @@ import React from 'react';
                         <p>{ description }</p>
                     </div>
                     { imgNodes }
+                    { vidNodes }
                 </div>
             </div>
         );

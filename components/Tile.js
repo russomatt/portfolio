@@ -17,10 +17,12 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
         });
     },
     showProject: function() {
+        var el = document.getElementById('body');
         var that = this;
         that.setState({
-            showThisProject: this.props.isProjectShown,
+            showThisProject: !that.state.showThisProject,
         });
+        el.style.overflow = "initial";
         that.props.toggleProject();
     },
     render: function() {
@@ -49,7 +51,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
                     { projectNode }
                 </ReactCSSTransitionGroup>
                 <div onClick={ this.showProject } className={ "tile " + "tile-" + id }>
-                    <img src={ "../img/placeholder" + id + ".png" }/>
+                    <img src={ "../img/tile" + id + ".png" }/>
                     <div className="tile-info">
                         <div className="tile-text">
                             <div className="top-rule"></div>

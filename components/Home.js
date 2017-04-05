@@ -25,7 +25,7 @@ import TileList from './TileList.js';
 
     render: function() {
         return (
-            <div className="home-view">
+            <div id="home-view" className="home-view">
                 <div className="container">
                     <div className="row title-box">
                         <div className="titles col-xs-12 col-sm-12">
@@ -46,7 +46,9 @@ import TileList from './TileList.js';
                         toggleProject={ this.props.toggleProject }
                         page={"home"}/>
                     <div className="col-xs-12 col-md-6">
-                        lololol
+                        <div className="work-button">
+                            <h3 onClick={ this.props.clickWork }>All Work</h3>
+                        </div>
                     </div>
                 </div>
             </div>

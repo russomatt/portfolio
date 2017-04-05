@@ -53,8 +53,8 @@ import TileList from './TileList.js';
                     <div className="col-xs-3 " onClick={ this.interactiveFilter }>
                         <span className={ this.state.filter == "interactive" ? "filter filter-active" : "filter"}>Interactive</span>
                     </div>
-                    <div className="col-xs-3 " onClick={ this.printFilter }>
-                        <span className={ this.state.filter == "print" ? "filter filter-active" : "filter"}>Print</span>
+                    <div className="col-xs-3 print-filter " onClick={ this.printFilter }>
+                        <span className={ this.state.filter == "print" ? "filter filter-active" : "print-filter filter"}>Print</span>
                     </div>
                     <div className="col-xs-3 " onClick={ this.otherFilter }>
                         <span className={ this.state.filter == "other" ? "filter filter-active" : "filter"}>Other</span>
