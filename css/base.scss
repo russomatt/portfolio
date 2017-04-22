@@ -335,6 +335,8 @@ nav.nav.project-nav {
         margin-bottom: 2em;
 
         img {
+            height: auto;
+            max-width: 100%;
             transform: scale(1);
             filter: grayscale(0);
             margin-bottom: 3em;
