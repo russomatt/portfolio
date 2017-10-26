@@ -20,14 +20,13 @@ var TileList = React.createClass({
                     return (
                         <div className={ content.id != 1 ? 'col-xs-12 col-md-6 tile ' + 'tile-' + content.id : 'col-xs-12 col-md-6 col-md-pull-6 tile ' + 'tile-' + content.id } key={ content.id }> 
                             <Tile
+                                showProject={ that.props.showProject }
                                 data={ content }
                                 id={ content.id }
                                 role={ content.project.role }
                                 title={ content.project.title }
                                 subTitle={ content.project.subTitle }
-                                isProjectShown={ that.props.isProjectShown }
-                                toggleProject={ that.props.toggleProject }
-                                />
+                            />
                         </div>
                     );
                 }
@@ -40,14 +39,13 @@ var TileList = React.createClass({
             var tileNodes = this.props.data.map(function(content) {
                 var tileNode = ( <div className={ 'col-xs-12 col-md-6 tile ' + 'tile-' + content.id } key={ content.id }> 
                             <Tile
+                                showProject={ that.props.showProject }
                                 data={ content }
                                 id={ content.id }
                                 role={ content.project.role }
                                 title={ content.project.title }
                                 subTitle={ content.project.subTitle }
-                                isProjectShown={ that.props.isProjectShown }
-                                toggleProject={ that.props.toggleProject }
-                                />
+                            />
                         </div> );
 
                 var tiles = function() {

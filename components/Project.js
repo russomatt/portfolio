@@ -13,6 +13,11 @@ import React from 'react';
             data: this.props.data.poject,
         });
     },
+    closeProject: function() {
+        var el = document.getElementById('body');
+        el.style.overflow = "initial";
+        this.props.showProject(false, null);
+    },
     render: function() {
         var that = this;
         var i = 0;
@@ -47,7 +52,7 @@ import React from 'react';
                     if (arr[i].indexOf('*') >= 0) {
                         linkKey = linkKey + 1;
                         var linkArr = arr[i].split('*'); 
-                        elArray.push((<a key={ 'link-' + linkKey } href={ linkArr[0] }>{ linkArr[1] }</a>));
+                        elArray.push((<a key={ 'link-' + linkKey } href={ linkArr[0] } target="blank_">{ linkArr[1] }</a>));
                     } else if (arr[i].indexOf('~') >= 0) {
                         brKey = brKey + 1;
                         var brArr = arr[i].split('~');
@@ -74,12 +79,12 @@ import React from 'react';
         return (
             <div id="project-view">
                 <div className="close-button"
-                    onClick={ this.props.closeProject }>
+                    onClick={ this.closeProject }>
                         <span className="icon icon-cross"></span>
                 </div>
                 <div id="project-header" style={ styles.bg }>
                     <div className="container">
-                        <div className="back-button" onClick={ this.props.closeProject }>
+                        <div className="back-button" onClick={ this.closeProject }>
                             <h2>
                                 <span className="icon icon-arrow-left2"></span>
                                 Close&nbsp;Project
