@@ -23,10 +23,13 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
                             <img src="../img/matt.png" />
                             <div className="col-xs-12 col-sm-11">
                                 <p>
-                                I currently work as a designer/developer for <a href="http://bevspot.com" target="blank_">BevSpot</a>, a bar management software company. My responsibilities include anything from implementing UI improvements that enhance our customers' experiences to full-on new feature designs and standalone tools.
+                                I currently am a graduate student in the Computer Science and Information Engineering master’s program at Rhine Waal University in Germany. 
                                 </p>
                                 <p>
-                                I graduated with a BFA in Graphic Design and Interactive Media from <a href="http://www.northeastern.edu" target="blank_">Northeastern University</a>.
+                                I also work remotely as a designer/developer for <a href="http://bevspot.com" target="blank_">BevSpot</a>, a bar management software company. My responsibilities include anything from implementing UI improvements that enhance our customers' experiences to full-on new feature designs and standalone tools.
+                                </p>
+                                <p>
+                                Last year, I graduated with a BFA in Graphic Design and Interactive Media from <a href="http://www.northeastern.edu" target="blank_">Northeastern University</a>.
                                 </p>
                                 <p>
                                 In 2015, I did a co-op as a junior front&#45;end developer at <a href="http://yeti.co" target="blank_">Yeti</a>, an app and software development agency in San Francisco. Working with their design director, I did the rebranding of the SF State College of Business. Also, I helped develop supply chain management software for Paradata.

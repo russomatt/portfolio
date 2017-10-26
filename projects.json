@@ -3,6 +3,54 @@
         "id": 1,
         "type": "interactive",
         "project": {
+            "title" : "San Francisco ",
+            "subTitle" : "Gentrification Visualization",
+            "role" : "Design/Development",
+            "description" : "A data visualization built to display tree coverage alongside data related to gentrification in an easily digestible way. The map has an interactive key to control the year of the data points. Below the map there is a breakdown of graphs per neighborhood over an adjustable time range, to allow the viewer to view trends across neighborhoods at a glance. This project was built with D3.js, Node Package Manager, and Webpack. All data that is displayed is open, public data provided by the City of San Francisco.~Visit the live visualization |http://mattrusso.github.io/*here|",
+            "bg" : "../img/bg-0.jpg",
+            "img" : [ "../img/sfdv-001.jpg",
+                "../img/sfdv-002.jpg",
+                "../img/sfdv-003.jpg"]
+        }
+    },
+    {
+        "id": 2,
+        "type": "interactive",
+        "project": {
+            "title" : "Drink Price Calculator",
+            "subTitle" : "",
+            "role" : "Design/Development",
+            "description" : "A free interactive tool to help users to create and price drink recipes. They are able to create a recipe entirely from scratch or use BevSpot's pre-populated ingredients from the ingredient dropdowns. The tool is developed to be responsive and works on a wide array of screen sizes. My role in the project was heavily in user experience design and front-end development, as well as some visual design.~Visit the tool |https://app.bevspot.com/drink_price_tool/ *here| (disclaimer: if you enter your personal information to create an account you may be contacted by sales representatives)",
+            "bg" : "../img/bg-03.jpg",
+            "img" : [ "../img/dpt-001.jpg",
+                "../img/dpt-0001.jpg",
+                "../img/dpt-002.jpg",
+                "../img/dpt-003.jpg",
+                "../img/dpt-004.jpg",
+                "../img/dpt-005.jpg",
+                "../img/dpt-006.jpg"]
+        }
+    },
+    {
+        "id": 3,
+        "type": "interactive",
+        "project": {
+            "title" : "PostCard:",
+            "subTitle" : "A Social Travel App",
+            "role" : "Design/Development",
+            "description" : "PostCard is an app which lets one send virtual postcards to their friends and family from anywhere in the world with a tap of the finger. This app is written in Swift for iOS, and utilizes CoreLocation, MapKit, user location data and the user camera. The virtual post card provides an element of personalization that a traditional postcard cannot by  allowing the user to zoom in on the map to view and visit the exact locations that their contacts have found photo worthy.",
+            "bg" : "../img/bg-2.jpg",
+            "img" : [ "../img/pc-000.jpg",
+                "../img/pc-001.jpg",
+                "../img/pc-gif.gif",
+                "../img/pc-002.jpg",
+                "../img/pc-003.jpg"]
+        }
+    },
+    {
+        "id": 4,
+        "type": "interactive",
+        "project": {
             "title" : "Death Rate",
             "subTitle" : "Interactive Visualization",
             "role" : "Design/Development",
@@ -13,13 +61,13 @@
         }
     },
     {
-        "id": 2,
+        "id": 5,
         "type": "interactive",
         "project": {
             "title" : "Bar",
             "subTitle" : "Profitability Tool",
             "role" : "Design/Development",
-            "description" : "A free interactive tool to help Bar Manager and Owners find out where their beverage program ranks in the United States. The user inputs three key pieces of data to receive a grade and a report containing a comprehensive analysis of their bar profitability. It provides them with BevSpot’s free resources to find ways to improve or draw them to purchase consultative services.~visit the tool |https://app.bevspot.com/bar-profit-tool/ *here| (disclaimer: do not enter your personal information in the form to avoid being contacted by sales representatives)",
+            "description" : "A free interactive tool to help Bar Managers and Owners find out where their beverage program ranks in the United States. The user inputs three key pieces of data to receive a grade and a report containing a comprehensive analysis of their bar profitability. It provides them with BevSpot’s free resources to find ways to improve or draw them to purchase consultative services.~visit the tool |https://app.bevspot.com/bar-profit-tool/ *here| (disclaimer: do not enter your personal information in the form to avoid being contacted by sales representatives)",
             "bg" : "../img/bg-2.gif",
             "img" : [ "../img/bpat-001.jpg",
                 "../img/bpat-002.jpg",
@@ -33,23 +81,7 @@
         }
     },
     {
-        "id": 3,
-        "type": "interactive",
-        "project": { 
-            "title" : "Greek Economic Crisis",
-            "subTitle" : "Interactive Timeline",
-            "role" : "Design/Development",
-            "description" : "A graph displaying data and key events relating to the Greek economic crisis from 2008–2014. When a year is clicked, the graph opens up to show a timeline of events that took place within the selected year, so the viewer can infer possible driving factors behind the observed trends.",
-            "bg" : "../img/bg-3.jpg",
-            "img" : [ "../img/greece-001.jpg",
-                "../img/greece-002.jpg",
-                "../img/greece-003.jpg",
-                "../img/greece-004.jpg",
-                "../img/greece-005.jpg"]
-        }
-    },
-    {
-        "id": 4,
+        "id": 6,
         "type": "interactive",
         "project": {
             "title" : "Virtual",
@@ -65,7 +97,23 @@
         }
     },
     {
-        "id": 5,
+        "id": 7,
+        "type": "interactive",
+        "project": { 
+            "title" : "Greek Economic Crisis",
+            "subTitle" : "Interactive Timeline",
+            "role" : "Design/Development",
+            "description" : "A graph displaying data and key events relating to the Greek economic crisis from 2008–2014. When a year is clicked, the graph opens up to show a timeline of events that took place within the selected year, so the viewer can infer possible driving factors behind the observed trends.",
+            "bg" : "../img/bg-3.jpg",
+            "img" : [ "../img/greece-001.jpg",
+                "../img/greece-002.jpg",
+                "../img/greece-003.jpg",
+                "../img/greece-004.jpg",
+                "../img/greece-005.jpg"]
+        }
+    },
+    {
+        "id": 8,
         "type": "interactive",
         "project": { 
             "title" : "Wave: An Intuitive",
@@ -80,7 +128,7 @@
         }
     },
     {
-        "id": 6,
+        "id": 9,
         "type": "print",
         "project": { 
             "title" : "SF State",
@@ -97,7 +145,7 @@
         }
     },
     {
-        "id": 7,
+        "id": 10,
         "type": "interactive",
         "project": { 
             "title" : "Adidas",
@@ -113,7 +161,7 @@
         }
     },
     {
-        "id": 8,
+        "id": 11,
         "type": "interactive",
         "project": { 
             "title" : "Paradata",
@@ -125,7 +173,7 @@
         }
     },
     {
-        "id": 9,
+        "id": 12,
         "type": "print",
         "project": { 
             "title" : "Infographics",
@@ -142,7 +190,7 @@
         }
     },
     {
-        "id": 10,
+        "id": 13,
         "type": "other",
         "project": { 
             "title" : "Illustrations",
@@ -157,7 +205,7 @@
         }
     },
     {
-        "id": 11,
+        "id": 14,
         "type": "other",
         "project": { 
             "title" : "Fine Arts",

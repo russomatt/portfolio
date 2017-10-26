@@ -52,7 +52,7 @@ import React from 'react';
                     if (arr[i].indexOf('*') >= 0) {
                         linkKey = linkKey + 1;
                         var linkArr = arr[i].split('*'); 
-                        elArray.push((<a key={ 'link-' + linkKey } href={ linkArr[0] }>{ linkArr[1] }</a>));
+                        elArray.push((<a key={ 'link-' + linkKey } href={ linkArr[0] } target="blank_">{ linkArr[1] }</a>));
                     } else if (arr[i].indexOf('~') >= 0) {
                         brKey = brKey + 1;
                         var brArr = arr[i].split('~');
