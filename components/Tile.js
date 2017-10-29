@@ -28,8 +28,8 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
                             <div className="tile-title"> { subTitle } </div>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
         );
     }
 });

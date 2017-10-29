@@ -23,7 +23,10 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
                             <img src="../img/matt.png" />
                             <div className="col-xs-12 col-sm-11">
                                 <p>
-                                I currently am a graduate student in the Computer Science and Information Engineering master’s program at Rhine Waal University in Germany. 
+                                Find me here: <a href="https://www.linkedin.com/in/russomatt/" target="blank_">LinkedIn</a> & <a href="https://github.com/russomatt" target="blank_">GitHub</a> 
+                                </p>
+                                <p>
+                                I currently am a graduate student in the Computer Science and Information Engineering master’s program at <a href="https://www.hochschule-rhein-waal.de/en" target="blank_">Rhine Waal University</a> in Germany. 
                                 </p>
                                 <p>
                                 I also work remotely as a designer/developer for <a href="http://bevspot.com" target="blank_">BevSpot</a>, a bar management software company. My responsibilities include anything from implementing UI improvements that enhance our customers' experiences to full-on new feature designs and standalone tools.

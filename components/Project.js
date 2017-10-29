@@ -18,10 +18,14 @@ import React from 'react';
         el.style.overflow = "initial";
         this.props.showProject(false, null);
     },
+    stopScroll: function() {
+        var el = document.getElementById('body');
+        el.style.overflow = "hidden";
+    },
     render: function() {
         var that = this;
         var i = 0;
-        var el = document.getElementById('body');
+
         var imgNodes = this.props.data.project.img != undefined ?
         this.props.data.project.img.map( function(img){
             if(that.props.data) {
@@ -42,7 +46,7 @@ import React from 'react';
                     </div> );
             }
         }) : "";
-         var parseDescription = function() {
+        var parseDescription = function() {
             if( that.props ) {
                 var arr = that.props.data.project.description.split('|');
                 var elArray = [];
@@ -68,7 +72,6 @@ import React from 'react';
         }
         var descArr = parseDescription();
         var description = descArr;
-        el.style.overflow = "hidden";
         var headerStyles = "url('" + this.props.data.project.bg + "')";
         var styles = {
             bg: {
@@ -77,7 +80,7 @@ import React from 'react';
             },
         }
         return (
-            <div id="project-view">
+            <div id="project-view" onLoad={this.stopScroll}>
                 <div className="close-button"
                     onClick={ this.closeProject }>
                         <span className="icon icon-cross"></span>

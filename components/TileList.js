@@ -13,7 +13,8 @@ var TileList = React.createClass({
     },
     render: function() {
 
-        if (this.props.data.length > 0 && this.props.page == "home") {
+        if ( this.props.data.length > 0 && this.props.page == "home") {
+
             var that = this;
             var tileNodes = this.props.data.map(function(content) {
                 if( content.id < 7) {
@@ -35,6 +36,7 @@ var TileList = React.createClass({
 
         }
         else if (this.props.data.length > 0 && this.props.page == "work") {
+
             var that = this;
             var tileNodes = this.props.data.map(function(content) {
                 var tileNode = ( <div className={ 'col-xs-12 col-md-6 tile ' + 'tile-' + content.id } key={ content.id }> 

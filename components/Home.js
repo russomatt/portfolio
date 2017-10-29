@@ -54,8 +54,8 @@ import Project from './Project.js';
                 <div className="container">
                     <div className="row title-box">
                         <div className="titles col-xs-12 col-sm-12">
-                            <h1>Mostly <strong>Design</strong></h1>
-                            <h1>Some <strong>Development</strong></h1>
+                            <h1> <strong>Design</strong></h1>
+                            <h1> <strong>Development</strong></h1>
                             <span className="large-divider">/</span>
                         </div>
                     </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router'
 import Nav from './Nav.js'
 import Home from './Home.js'
 import Work from './Work.js'
