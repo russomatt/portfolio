@@ -54,8 +54,9 @@ import Project from './Project.js';
                 <div className="container">
                     <div className="row title-box">
                         <div className="titles col-xs-12 col-sm-12">
-                            <h1> <strong>Design</strong></h1>
-                            <h1> <strong>Development</strong></h1>
+                            <div className="top-rule"></div>
+                            <h1> Design</h1>
+                            <h1> Development</h1>
                             <span className="large-divider">/</span>
                         </div>
                     </div>
@@ -63,7 +64,7 @@ import Project from './Project.js';
                         <div className="top-rule"></div>
                             <h3>Hello, my name is Matt.</h3>
                         <div className="row col-xs-12 col-sm-12">
-                            <p>I am a designer working in both pixels and front&#45;end code, currently residing in Düsseldorf. I'm passionate about interactive experiences, data visualizations, and intuitive communication. Take a look at my work and feel free to get in touch.</p>
+                            <p>I am a designer/developer working in both pixels and front&#45;end code, currently splitting my time between Amsterdam and Düsseldorf. I'm passionate about interactive experiences, data visualizations, and intuitive communication. Take a look at my work and feel free to get in touch.</p>
                         </div>
                     </div>
                     <TileList

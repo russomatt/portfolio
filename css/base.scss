@@ -9,6 +9,7 @@ $type-color-main : #2E2E2E;
 $type-family-main : 'Helvetica Neue', Helvetica, arial, sans-serif;
 $serif-type-family : baskerville, georgia, 'Helvetica Neue', Helvetica, arial, sans-serif;
 $mobile-size : 520px;
+$tablet-size : 940px;
 $accent-color : rgb(232, 101, 88);
 
 body {
@@ -28,7 +29,6 @@ nav.nav {
     width: 100%;
     padding: 1.25em 2em 1.5em;
     background: rgba(255,255,255,0.9);
-    border-bottom: 1px solid #eee;
     transition: 0.35s;
 
     a, span {
@@ -61,57 +61,72 @@ nav.nav {
     display: table;
     width: 100%;
     text-align: right;
-    margin: 6em -10px 6em;
+    margin: 4em 0 9em;
     white-space: nowrap;
 
+    .top-rule {
+        border-top: 3px solid $type-color-main;
+        margin-bottom: 1.1em;
+    }
     h1 {
         margin:0;
-        font-size: 5.25em;
         font-weight: 100;
         position: relative;
         z-index: 2;
+        font-size: 3.75em;
+        letter-spacing: 0.25em;
+        margin-right: -0.25em;
+        line-height: 1.25em;
+        text-transform: uppercase; 
+        font-weight: 400;
     }
     .titles {
         position: relative;
     }
     .large-divider {
         position: absolute;
-        top: -45%;
-        right: -5%;
+        top: -0.15em;
+        font-size: 20em;
+        right: -0.065em;
     }
-    @media (max-width: $mobile-size) {
-        margin: 5em -10px 1em;
-
+    @media (max-width: $tablet-size) {
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
         }
         .large-divider {
-            right: 0;
-            top: -73%;
-            font-size: 12.5em;
+            font-size: 15em;
+        }
+    }
+    @media (max-width: $mobile-size) {
+        margin: 4.5em 0 4em;
+
+        h1 {
+            font-size: 2em;
+        }
+        .large-divider {
+            font-size: 8.5em;
+            right: 0.025em;
         }
     }
 }
 .intro-text {
-    padding-top: 3em;
 
     .top-rule {
-        width: 15%;
-        border-top: 6px solid $type-color-main;
+        border-top: 3px solid $type-color-main;
     }
     h3 {
-        margin: 0.75em 0 2.5em;
+        margin: 0.65em 0 0.6em;
+        font-size: 1.2em;
     }
     p {
         font-size: 1.25em;
         font-family: $serif-type-family;
         line-height: 1.25em;
     }
-    @media (max-width: 770px) {
-      p {
-        margin-bottom: 2em;
-        width: 90%;
-      }
+    @media (max-width: $tablet-size) {
+        p {
+            margin-bottom: 3em;
+        }
     }
     @media (max-width: $mobile-size) {
         h3 {
@@ -208,7 +223,7 @@ nav.nav {
     font-size: 3em;
 
     h3 {
-        color: #4d4d4d;
+        color: $type-color-main;
         display: inline-block;
         white-space: nowrap;
         cursor: pointer;
